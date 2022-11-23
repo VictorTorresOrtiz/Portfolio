@@ -1,7 +1,7 @@
 function modals(){
     swal({
         title: "Estas Seguro?",
-        text: "Este link es esterno a VictorPortfolio.com",
+        text: "Este link es externo a VictorPortfolio.com",
         icon: "warning",
         buttons: true,
         dangerMode: true,
