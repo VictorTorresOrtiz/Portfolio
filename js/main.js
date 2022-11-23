@@ -14,6 +14,14 @@
   }
   burgerMenu();
 
+  //Alerts cierre automatico
+  window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+	}, 2000); //Segudos
+	 //Alerts cierre automático
+
   let siteIstotope = function() {
 	let $container = $('#portfolio-grid').isotope({
 	    itemSelector : '.item',
@@ -41,7 +49,7 @@
   });
 
 
-  var siteOwlCarousel = function() {
+  let siteOwlCarousel = function() {
   	$('.testimonial-carousel').owlCarousel({
 		  center: true,
 	    items: 1,
