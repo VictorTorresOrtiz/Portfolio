@@ -1,3 +1,4 @@
+"use strict";
 function modals(){
     swal({
         title: "Estas Seguro?",
