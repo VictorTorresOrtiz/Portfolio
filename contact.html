@@ -40,6 +40,9 @@
 
   <!-- JS CORE -->
   <script defer src="js/main.js"></script>
+
+  <!-- JS FORM VALIDATOR -->
+  <script defer src="js/formValidator.js"></script>
 </head>
 
 <body>
@@ -82,34 +85,34 @@
 
         <div class="row mb-5 align-items-end">
           <div class="col-md-6" data-aos="fade-up">
-            <h2>Contact</h2>
+            <h2>Contacto</h2>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
             
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form" name="fvalida">
               
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Minimo 4 caracteres" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
                   <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Introduce un email valido" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <label for="name">Numero de Contacto</label>
+                  <input type="text" class="form-control" name="contact" id="contact" data-rule="minlen:4" data-msg="Minimo 8 caracters" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" cols="30" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                  <label for="name">Motivo de Contacto</label>
+                  <textarea class="form-control" name="message" cols="30" rows="10" data-rule=" minlen:10" data-msg="Minimo 10 caracteres" required></textarea>
                   <div class="validate"></div>
                 </div>
 
@@ -121,7 +124,7 @@
                 </div>
 
                 <div class="col-md-6 form-group">
-                  <input type="submit" class="readmore d-block w-100" value="Send Message">
+                  <input type="submit" class="readmore d-block w-100" value="Enviar" onclick="validarForm()">
                 </div>
               </div>
             </form>
