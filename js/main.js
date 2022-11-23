@@ -3,7 +3,7 @@
 (function ($) {
   "use strict";
 
-  var burgerMenu = function() {
+  let burgerMenu = function() {
 	  $('.burger').click(function(e) {
 	  	$(window).scrollTop(0);
 	    if(!$('.burger').hasClass('active'))
@@ -14,8 +14,8 @@
   }
   burgerMenu();
 
-  var siteIstotope = function() {
-	  var $container = $('#portfolio-grid').isotope({
+  let siteIstotope = function() {
+	let $container = $('#portfolio-grid').isotope({
 	    itemSelector : '.item',
 	    isFitWidth: true
 	  });
@@ -30,7 +30,7 @@
 
 	  $('#filters').on( 'click', 'a', function(e) {
 	  	e.preventDefault();
-	    var filterValue = $(this).attr('data-filter');
+		  let filterValue = $(this).attr('data-filter');
 	    $container.isotope({ filter: filterValue });
 	    $('#filters a').removeClass('active');
 	    $(this).addClass('active');
