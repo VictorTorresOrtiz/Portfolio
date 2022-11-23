@@ -22,6 +22,13 @@
 	}, 2000); //Segudos
 	 //Alerts cierre automático
 
+
+	 //Submit animado
+	
+
+
+	 //Submit animado
+
   let siteIstotope = function() {
 	let $container = $('#portfolio-grid').isotope({
 	    itemSelector : '.item',
