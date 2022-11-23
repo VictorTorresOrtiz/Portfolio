@@ -14,21 +14,6 @@
   }
   burgerMenu();
 
-  //Alerts cierre automatico
-  window.setTimeout(function() {
-    $(".alert").fadeTo(500, 0).slideUp(500, function(){
-        $(this).remove(); 
-    });
-	}, 2000); //Segudos
-	 //Alerts cierre automático
-
-
-	 //Submit animado
-	
-
-
-	 //Submit animado
-
   let siteIstotope = function() {
 	let $container = $('#portfolio-grid').isotope({
 	    itemSelector : '.item',
