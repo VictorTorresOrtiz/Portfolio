@@ -40,6 +40,7 @@
 
   <!-- JS CORE -->
   <script defer src="js/main.js"></script>
+  <script defer src="js/alerts.js"></script>
 
   <!-- JS FORM VALIDATOR -->
   <script defer src="js/formValidator.js"></script>
@@ -70,7 +71,12 @@
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">Victor's Portfolio.</a>
-
+       <!--Alert PWA-->
+       <div class="alert alert-warning alert-dismissible fade show" id="alerts" role="alert">
+        <strong>Aviso!</strong> Su mensaje será leido y respondido antes de 24 horas.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <!--Alert PWA-->
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
       </a>
