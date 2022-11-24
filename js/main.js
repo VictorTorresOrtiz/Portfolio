@@ -2,7 +2,7 @@
 
 (function ($) {
   "use strict";
-
+	//FUNCIÓN DEL MENU HAMBURGUESA
   let burgerMenu = function() {
 	  $('.burger').click(function(e) {
 	  	$(window).scrollTop(0);
@@ -13,7 +13,9 @@
 	  });
   }
   burgerMenu();
+//FUNCIÓN DEL MENU HAMBURGUESA
 
+//JS PARA EL FILTRO DEL INDEX
   let siteIstotope = function() {
 	let $container = $('#portfolio-grid').isotope({
 	    itemSelector : '.item',
@@ -39,8 +41,9 @@
   $(window).on('load', function () {
     siteIstotope();
   });
+//JS PARA EL FILTRO DEL INDEX
 
-
+//JS PARA LOS TESTIMONIALS
   let siteOwlCarousel = function() {
   	$('.testimonial-carousel').owlCarousel({
 		  center: true,
@@ -55,7 +58,10 @@
 
 
 })(jQuery);
+//JS PARA LOS TESTIMONIALS
 
+
+//JS DE ANIMACIONES AOS (fade etc...)
 AOS.init({
 	easing: 'ease',
 	duration: 1000,
