@@ -46,7 +46,7 @@
 </head>
 
 <body>
-
+  <!-- MENU -->
   <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
     <div class="container py-2 py-md-5">
       <div class="row align-items-start">
@@ -57,19 +57,19 @@
             <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <!--PONER LO DEL CORREO-->
         <div class="col-md-4 d-none d-md-block">
           <h3>Contact with me</h3>
-          <p><a href="#">victor.torres.ortiz.18@gmail.com</a></p>
+          <p><a href="mailto:victor.torres.ortiz.18@gmail.com">victor.torres.ortiz.18@gmail.com</a></p>
         </div>
       </div>
-
     </div>
   </div>
+  <!-- MENU -->
 
+  <!-- MENU Y Titulo-->
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Portfolio.</a>
+      <a class="navbar-brand" href="index.html">Victor's Portfolio.</a>
 
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
@@ -77,9 +77,10 @@
 
     </div>
   </nav>
+   <!-- MENU Y Titulo-->
 
+ <!--MAIN-->
   <main id="main">
-
     <div class="site-section pb-0 site-portfolio">
       <div class="container">
 
@@ -91,7 +92,7 @@
 
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-            
+             <!--FORM-->
             <form action="#" method="post" role="form" class="php-email-form" name="fvalida">
               
               <div class="row">
@@ -115,21 +116,23 @@
                   <textarea class="form-control" name="message" cols="30" rows="10" data-rule=" minlen:10" data-msg="Minimo 10 caracteres" required></textarea>
                   <div class="validate"></div>
                 </div>
+                 <!-- FORM-->
 
-
+                <!-- FORM SUBMIT OK-->
                 <div class="col-md-12 mb-3">
                     <div class="loading"></div>
                   <div class="error-message"></div>
                   <div class="sent-message">Mensaje enviado con exito!</div>
                 </div>
+                <!-- FORM SUBMIT OK-->
 
                 <div class="col-md-6 form-group">
-                  <input type="submit" class="readmore d-block w-100" value="Enviar" onclick="validarForm()">
+                  <input type="submit" class="readmore d-block w-100" value="Enviar" onclick="validarForm()"> <!-- Validación-->
                 </div>
               </div>
             </form>
           </div>
-
+          <!-- Apartado datos contacto-->
           <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
             <ul class="list-unstyled">
               <li class="mb-3">
@@ -143,13 +146,14 @@
                 <a href="mailto:victor.torres.ortiz.18@gmail.com">
                   <span>victor.torres.ortiz.18@gmail.com</span>
               </a>
-              </li>
+              <!-- Mapa-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.9094470647083!2d-5.835666484431689!3d37.34465244456113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1264bfc7eaf80f%3A0x690779c6a5c9f753!2sC.%20Betania%2C%2041500%20Alcal%C3%A1%20de%20Guada%C3%ADra%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1669293947343!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </li>
             </ul>
           </div>
+          <!-- Apartado datos contacto-->
         </div>
-
       </div>
-
     </div>
   </main>
 
