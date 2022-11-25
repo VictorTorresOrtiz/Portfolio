@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact - PortFolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon-16x16.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Files Library -->
+  <link href="../vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+  <!-- CSS CORE -->
+  <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Vendor JS Files -->
+    <script defer src="../vendor/jquery/jquery.min.js"></script>
+    <script defer src="../vendor/jquery/jquery-migrate.min.js"></script>
+    <script defer src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="../vendor/easing/easing.min.js"></script>
+    <script defer src="../vendor/php-email-form/validate.js"></script>
+    <script defer src="../vendor/isotope/isotope.pkgd.min.js"></script>
+    <script defer src="../vendor/aos/aos.js"></script>
+    <script defer src="../vendor/owlcarousel/owl.carousel.min.js"></script>
+  
+    <!-- JS CORE -->
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/alerts.js"></script>
+
+  <!-- JS FORM VALIDATOR -->
+  <script defer src="../js/formValidator.js"></script>
+</head>
+
+<body>
+ <!--MENU-->
+ <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+  <div class="container py-2 py-md-5">
+    <div class="row align-items-start">
+      <div class="col-md-2">
+        <ul class="custom-menu">
+          <li><a href="english.html">Ínicio</a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="proyectosMain.html">Proyectos Desatacados</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 d-none d-md-block  mr-auto">
+        <div class="tweet d-flex">
+          <span class="icofont-smart-phone text-white mt-2 mr-1"></span>
+          <div>
+            <p class="mr-5">+34 691386582</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-none d-md-block">
+        <h3>¿Algún problema?</h3>
+        <p><a href="mailto:victor.torres.ortiz.18@gmail.com">victor.torres.ortiz.18@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--MENU-->
+
+  <!-- MENU Y Titulo-->
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="english.html">Victor's Portfolio.</a>
+       <!--Alert PWA-->
+       <div class="alert alert-warning alert-dismissible fade show" id="alerts" role="alert">
+        <strong>Aviso!</strong> Su mensaje será leido y respondido antes de 24 horas.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <!--Alert PWA-->
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+
+    </div>
+  </nav>
+   <!-- MENU Y Titulo-->
+
+ <!--MAIN-->
+  <main id="main">
+    <div class="site-section pb-0 site-portfolio">
+      <div class="container">
+
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-6" data-aos="fade-up">
+            <h2>Contacto</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
+             <!--FORM-->
+            <form action="#" method="post" role="form" class="php-email-form" name="fvalida">
+              
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Minimo 4 caracteres" required />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="name">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Introduce un email valido" required/>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Numero de Contacto</label>
+                  <input type="text" class="form-control" name="contact" id="contact" data-rule="minlen:4" data-msg="Minimo 8 caracters" required/>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Motivo de Contacto</label>
+                  <textarea class="form-control" name="message" cols="30" rows="10" data-rule=" minlen:10" data-msg="Minimo 10 caracteres" required></textarea>
+                  <div class="validate"></div>
+                </div>
+                 <!-- FORM-->
+
+                <!-- FORM SUBMIT OK-->
+                <div class="col-md-12 mb-3">
+                    <div class="loading"></div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Mensaje enviado con exito!</div>
+                </div>
+                <!-- FORM SUBMIT OK-->
+
+                <div class="col-md-6 form-group">
+                  <input type="submit" class="readmore d-block w-100" value="Enviar" onclick="validarForm()"> <!-- Validación-->
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Apartado datos contacto-->
+          <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <span class="la la-mobile la-2x mb-4"></span>
+                <a href="tel:+34691386582">
+                  <span>+34 691 386 582</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <span class="la la-mail-bulk la-2x mb-4"></span>
+                <a href="mailto:victor.torres.ortiz.18@gmail.com">
+                  <span>victor.torres.ortiz.18@gmail.com</span>
+              </a>
+              <!-- Mapa-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.9094470647083!2d-5.835666484431689!3d37.34465244456113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1264bfc7eaf80f%3A0x690779c6a5c9f753!2sC.%20Betania%2C%2041500%20Alcal%C3%A1%20de%20Guada%C3%ADra%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1669293947343!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </li>
+            </ul>
+          </div>
+          <!-- Apartado datos contacto-->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--FOOTER-->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://github.com/VictorTorresOrtiz" target="_blank"><span class="icofont-github"></span></a>
+          <a href="https://www.linkedin.com/in/v%C3%ADctor-torres-ortiz-78178b253/" target="_blank"><span class="icofont-linkedin"></span></a>
+          <a href="tel:+34691386582"><span class="icofont-smart-phone"></span></a>
+          <a href="mailto:victor.torres.ortiz.18@gmail.com"><span class="icofont-email"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
