@@ -47,52 +47,54 @@
 </head>
 
 <body>
- <!--MENU-->
- <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-  <div class="container py-2 py-md-5">
-    <div class="row align-items-start">
-      <div class="col-md-2">
-        <ul class="custom-menu">
-          <li><a href="english.html">Ínicio</a></li>
-          <li><a href="about.html">Sobre mí</a></li>
-          <li><a href="proyectosMain.html">Proyectos Desatacados</a></li>
-          <li class="active"><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-6 d-none d-md-block  mr-auto">
-        <div class="tweet d-flex">
-          <span class="icofont-smart-phone text-white mt-2 mr-1"></span>
-          <div>
-            <p class="mr-5">+34 691386582</p>
+  <!--MENU-->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="english.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="proyectosMain.html">Proyects</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+          <div class="tweet d-flex">
+            <span class="icofont-smart-phone text-white mt-2 mr-1"></span>
+            <div>
+              <p class="mr-5">+34 691386582</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 d-none d-md-block">
-        <h3>¿Algún problema?</h3>
-        <p><a href="mailto:victor.torres.ortiz.18@gmail.com">victor.torres.ortiz.18@gmail.com</a></p>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>Any problem?</h3>
+          <p><a href="mailto:victor.torres.ortiz.18@gmail.com">victor.torres.ortiz.18@gmail.com</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!--MENU-->
-
-  <!-- MENU Y Titulo-->
+  <!--MENU-->
+  
+  
+  <!--MENU Y TITULO-->
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="english.html">Victor's Portfolio.</a>
-       <!--Alert PWA-->
-       <div class="alert alert-warning alert-dismissible fade show" id="alerts" role="alert">
-        <strong>Aviso!</strong> Su mensaje será leido y respondido antes de 24 horas.
+      <a class="navbar-brand" href="english.html">Victor´s Portfolio.</a>
+      <!--Alert PWA-->
+      <div class="alert alert-warning alert-dismissible fade show" id="alerts" role="alert">
+        <strong>Warning!</strong> Your message will be read and answered within 24 hours.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <!--Alert PWA-->
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
       </a>
-
     </div>
   </nav>
-   <!-- MENU Y Titulo-->
+  <!--MENU-->
+
+
 
  <!--MAIN-->
   <main id="main">
@@ -101,7 +103,7 @@
 
         <div class="row mb-5 align-items-end">
           <div class="col-md-6" data-aos="fade-up">
-            <h2>Contacto</h2>
+            <h2>Contact</h2>
           </div>
         </div>
 
@@ -112,7 +114,7 @@
               
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <label for="name">Nombre</label>
+                  <label for="name">Name</label>
                   <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Minimo 4 caracteres" required />
                   <div class="validate"></div>
                 </div>
@@ -122,27 +124,18 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Numero de Contacto</label>
+                  <label for="name">Contact number</label>
                   <input type="text" class="form-control" name="contact" id="contact" data-rule="minlen:4" data-msg="Minimo 8 caracters" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Motivo de Contacto</label>
+                  <label for="name">Message</label>
                   <textarea class="form-control" name="message" cols="30" rows="10" data-rule=" minlen:10" data-msg="Minimo 10 caracteres" required></textarea>
                   <div class="validate"></div>
                 </div>
                  <!-- FORM-->
-
-                <!-- FORM SUBMIT OK-->
-                <div class="col-md-12 mb-3">
-                    <div class="loading"></div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Mensaje enviado con exito!</div>
-                </div>
-                <!-- FORM SUBMIT OK-->
-
                 <div class="col-md-6 form-group">
-                  <input type="submit" class="readmore d-block w-100" value="Enviar" onclick="validarForm()"> <!-- Validación-->
+                  <input type="submit" class="readmore d-block w-100" value="submit" onclick="validarForm()"> <!-- Validación-->
                 </div>
               </div>
             </form>
