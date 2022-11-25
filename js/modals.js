@@ -15,3 +15,7 @@ function modals(){
         } 
       });
 }
+
+function comingSoon(){
+  swal("COOMING SOON");
+}

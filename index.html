@@ -64,49 +64,90 @@
 
     <!--JS HABILIDADES-->
     <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script defer src="js/habilidades.js"></script>"
+    <script defer src="js/modals.js"></script>
 
 
 
 </head>
 <body>
-  <main id="main">
-  <!--IMAGENES-->
-    <div class="site-section site-portfolio">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <h2>Seleccionar Idioma</h2>
-            <p class="mb-0">Victor´s PortFolio </p>
+
+  <!--MENU-->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li class="active"><a href="español.html">Español</a></li>
+            <li><a href="ingles/english.html">English</a></li>
+            <li onclick="comingSoon()"><a href="#">Français</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-none d-md-block  mr-auto">
+          <div class="tweet d-flex">
+            <span class="icofont-smart-phone text-white mt-2 mr-1"></span>
+            <div>
+              <p class="mr-5">+34 691386582</p>
+            </div>
           </div>
         </div>
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item proyects col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="ingles/english.html" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Projectos</h3>
-              </div>
-              <img class="img-fluid" src="img/england.png">
-            </a>
-          </div>
-          <div class="item github col-sm-6 col-md-4 col-lg-4 mb-4">
-              <div class="work-info">
-              </div>
-              <img class="img-fluid" src="img/blank.png">
-            </a>
-          </div>
-          <div class="item Linkedin col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="español.html" target="_blank" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Linkedin</h3>
-              </div>
-              <img class="img-fluid" src="img/spain.png">
-            </a>
-          </div>
+        <div class="col-md-4 d-none d-md-block">
+          <h3>¿Algun problema?</h3>
+          <p><a href="mailto:victor.torres.ortiz.18@gmail.com">victor.torres.ortiz.18@gmail.com</a></p>
         </div>
       </div>
     </div>
-    <!--IMAGENES-->
+  </div>
+  <!--MENU-->
+  <!--MENU Y TITULO-->
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="english.html">Victor´s Portfolio.</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+  <!--MENU-->
+
+  <main id="main">
+  <!--IMAGENES-->
+  <div class="site-section site-portfolio">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+          <h2>Seleccione su idioma</h2>
+          <p class="mb-0">Portfolio adaptado a su idioma</p>
+        </div>
+      </div>
+      <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+        <div class="item proyects col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="ingles/english.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Portfolio English</h3>
+            </div>
+            <img class="img-fluid" src="img/england.png">
+          </a>
+        </div>
+        <div class="item github col-sm-6 col-md-4 col-lg-4 mb-4" onclick="comingSoon()">
+          <a href="#" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Portfolio Français</h3>
+            </div>
+            <img class="img-fluid" src="img/frances.png" >
+          </a>
+        </div>
+        <div class="item Linkedin col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="español.html"  class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Portfolio Español</h3>
+            </div>
+            <img class="img-fluid" src="img/spain.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--IMAGENES-->
 
 </body>
 
